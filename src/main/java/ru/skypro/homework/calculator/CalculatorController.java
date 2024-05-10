@@ -15,7 +15,7 @@ public class CalculatorController {
 
     @GetMapping
     public String hello() {
-        return calculatorService.hello();
+        return "Добро пожаловать в калькулятор";
     }
     @GetMapping(path = "/plus")
     public String plus(@RequestParam(value = "num1", required = false) Integer num1, @RequestParam(value = "num2", required = false) Integer num2){
